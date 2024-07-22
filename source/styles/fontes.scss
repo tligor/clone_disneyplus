@@ -1,0 +1,40 @@
+@use 'variaveis';
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal
+}
+
+@mixin title($fontSize: 28px){
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario;
+}
+
+.text__link{
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
+}
+
+.text__big{
+    @include text(18px);
+}
+.text__normal{
+    @include text;
+}
+.text__small{
+    @include text(12px);
+}
+
+.title__big{
+    @include title(44px);
+}
+
+.title__normal{
+    @include title(40px);
+}
+
+.title__small{
+    @include title(28px);
+}

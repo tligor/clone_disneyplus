@@ -1,6 +1,9 @@
 @use 'reset';
+@use 'variaveis';
+@use 'fontes';
+@use 'hero';
 
-body{
-    background-color: #ccc;
-    color:blue;
+body {
+    background-color: variaveis.$corDeFundo;
+    color: blue;
 }
