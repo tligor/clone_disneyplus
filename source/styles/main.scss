@@ -2,8 +2,8 @@
 @use 'variaveis';
 @use 'fontes';
 @use 'hero';
+@use 'shows';
 
 body {
     background-color: variaveis.$corDeFundo;
-    font-family: Avenir, sans-serif;
 }
