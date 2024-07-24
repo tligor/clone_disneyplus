@@ -3,7 +3,22 @@
 @use 'fontes';
 @use 'hero';
 @use 'shows';
+@use 'plans';
 
 body {
     background-color: variaveis.$corDeFundo;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$buttonBg;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    border:none;
 }

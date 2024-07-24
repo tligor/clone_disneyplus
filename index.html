@@ -26,12 +26,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./build/assets/images/logos/disney_star_plus.png" alt="Disney Star+">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span class="text__normal">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./build/assets/images/logos/disney_star_plus.png" alt="Disney Star+">
-                    <button>Assine agora</button>
+                    <button class="button">Assine agora</button>
                     <span class="text__normal">R$ 45,90/mês*</span>
                 </li>
             </ul>
@@ -42,13 +42,15 @@
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-            <button class="shows__tabs__button">Em breve</button><button class="shows__tabs__button">Mais populares</button><button class="shows__tabs__button">Mais no Star+</button>
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
+            <button data-tab-button="mais_populares" class="shows__tabs__button">Mais populares</button>
+            <button data-tab-button="mais_nostar" class="shows__tabs__button">Mais no Star+</button>
         </nav>
-        <ul class="shows__list">
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./build/assets/images/em_breve/desencantada.jpg" alt="Desencantada">
             </li>
-            <li class="shows__list__item">
+            <li class="shows__list__item shows__list__item--is-active">
                 <img src="./build/assets/images/em_breve/lobisomem.jpg" alt="Lobisomem">
             </li>
             <li class="shows__list__item">
@@ -64,6 +66,85 @@
                 <img src="./build/assets/images/em_breve/willow.jpg" alt="Willow">
             </li>
         </ul>
+        <ul data-tab-id="mais_populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/sem_limites.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item shows__list__item--is-active">
+                <img src="./build/assets/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/sem_limites.jpg" alt="Sem limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/the_santa_clauses.jpg" alt="The Santa clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+        </ul>
+        <ul data-tab-id="mais_nostar" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/willow.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item shows__list__item--is-active">
+                <img src="./build/assets/images/em_breve/the_santa_clauses.jpg" alt="Lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/sem_limites.jpg" alt="Sem limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/the_santa_clauses.jpg" alt="The Santa clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./build/assets/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+        </ul>
     </section>
+    <section class="plans">
+        <h2 class="title__big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./source/assets/images/logos/disneyplus_underline.png" alt="Disney+">
+                <strong class="title__small">
+                    R$ 27,90/mês*
+                </strong>
+                <p class="text__big">
+                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./source/assets/images/logos/disney_star_plus_sm.png" alt="Disney+">
+                <strong class="title__small">
+                    R$ 45,90/mês*
+                </strong>
+                <p class="text__big">
+                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço unico.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./source/assets/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
+                <strong class="title__small">
+                    R$ 55,90/mês*
+                </strong>
+                <p class="text__big">
+                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+        </ul>
+        <p class="text__small">
+            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+        </p>
+    </section>
+    <script src="./source/main.js"></script>
 </body>
 </html>

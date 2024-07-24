@@ -2,6 +2,7 @@
 
 .shows{
     padding: 2vw 5.6vw;
+    min-height: 50vw;
     &__tabs{
         display: flex;
         justify-content: center;
@@ -9,18 +10,26 @@
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
             border: none;
-            border-bottom: 5px solid variaveis.$corTextoSecundario;
             padding-bottom: 5px;
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+            &--is-active{
+                border-color:variaveis.$corTextoSecundario;
+            }
         }
     }
     &__list{
         margin-top: 44px;
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        &--is-active{
+            display: grid;
+        }
     }
     &__item{
         img{
