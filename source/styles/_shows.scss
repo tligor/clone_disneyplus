@@ -30,11 +30,12 @@
         &--is-active{
             display: grid;
         }
-    }
-    &__item{
-        img{
-            max-width: 100%;
-            border-radius: 4px;
+        &__item{
+            
+            img{
+                width: 100%;
+                border-radius: 4px;
+            }
         }
     }
 }

@@ -11,7 +11,11 @@
 body {
     background-color: variaveis.$corDeFundo;
 }
-
+.container{
+    max-width: 1024px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 .button{
     display: block;
     width: 100%;
