@@ -16,7 +16,7 @@
             &__logo, &__links__item:first-child{
                 opacity: 0;
                 visibility: hidden;
-                transition: opacity .5s ease;
+                transition: .5s ease;
             }
         }
     }
@@ -30,7 +30,7 @@
         max-width: 80px;
         width: 100%;
         margin: 5px;
-        transition: opacity .5s ease;
+        transition: .5s ease;
     }
 
     &__links{
