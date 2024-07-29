@@ -1,0 +1,85 @@
+@use 'variaveis';
+
+.footer{
+    padding: 26px 8px;
+
+    &__container{
+        max-width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__logo{
+        width: 120px;
+        height: 66px;
+        margin: 0 auto 10px;
+    }
+    &__links{
+        padding: 26px 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        p{
+            text-align: left;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px 0;
+            li{
+                margin-bottom: 20px;
+                text-align: left;
+                line-height: 22px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        &__item{
+
+        &__horizontal{
+            padding-top: 36px;
+            justify-content: center;
+            display: flex;
+            gap: 46px;
+            align-items: center;
+            a{
+                text-decoration: none;
+            }
+        }}
+        }
+        .copy{
+            margin-top: 16px;
+
+            p{
+                margin-top: 24px;
+            }
+        }
+    
+}
+
+.language_selector{
+    display: block;
+    text-align: start;
+    img{
+        width: 18px;
+        height: 18px;
+    }
+    select{
+        background-color: transparent;
+        border: none;
+        color: variaveis.$corTextoPrincipal;
+        height: 28px;
+        &:hover{
+            color: variaveis.$corTextoSecundario;
+        }
+        option{
+            color: variaveis.$corDeFundo;
+        }
+    }
+    
+
+}
