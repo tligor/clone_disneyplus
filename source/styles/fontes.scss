@@ -30,22 +30,45 @@
 
 .text__big{
     @include text(18px);
+
+    @media (max-width: 768px){
+        @include text(15px);
+    }
 }
 .text__normal{
     @include text;
+
+    @media (max-width: 768px){
+        @include text(14px);
+    }
 }
 .text__small{
     @include text(12px);
+
+    @media (max-width: 768px){
+        @include text(11px);
+    }
 }
 
 .title__big{
     @include title(44px);
+    @media (max-width: 768px){
+        @include title(26px);
+    }
 }
 
 .title__normal{
     @include title(40px);
+
+    @media (max-width: 768px){
+        @include title(24px);
+    }
 }
 
 .title__small{
     @include title(28px);
+
+    @media (max-width: 768px){
+        @include title(22px);
+    }
 }
