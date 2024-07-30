@@ -7,20 +7,31 @@
         max-width: 1024px;
         margin: 0 auto;
         text-align: center;
+
+        @media (max-width: 768px){
+            max-width: 283px;
+        }
     }
 
     &__logo{
         width: 120px;
         height: 66px;
         margin: 0 auto 10px;
+        
+        @media (max-width:768px){
+            display: block;
+            margin-top: 50px;
+        }
     }
     &__links{
         padding: 26px 8px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 50px;
-
+        
+        @media (max-width:768px){
+            padding: 0;
+        }
         p{
             text-align: left;
         }
@@ -45,7 +56,20 @@
             justify-content: center;
             display: flex;
             gap: 46px;
-            align-items: center;
+            align-items: start;
+            @media (max-width:768px){
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                line-height: 21px;
+                letter-spacing: 0;
+                height: 350px;
+                padding-top: 0px;
+            }
+            &__social{
+                display: flex;
+                justify-content: space-between;
+            }
             a{
                 text-decoration: none;
             }
@@ -80,6 +104,4 @@
             color: variaveis.$corDeFundo;
         }
     }
-    
-
 }
