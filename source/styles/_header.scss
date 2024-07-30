@@ -1,25 +1,11 @@
 @use 'variaveis';
 
 .header{
-    position: sticky;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: end;
     background-color: variaveis.$corDeFundo;
     transition: background-color .5s ease;
     z-index: 1;
-
-    &--is-hidden{
-        background-color: transparent;
-        transition: background-color .5s ease;
-
-        .header{
-            &__logo, &__links__item:first-child{
-                opacity: 0;
-                visibility: hidden;
-                transition: .5s ease;
-            }
-        }
-    }
 
     &__container{
         padding: 8px 36px;
@@ -30,19 +16,10 @@
             padding: 0 12px 0 20px;
         }
     }
-    &__logo{
-        max-width: 80px;
-        width: 100%;
-        margin: 5px;
-        transition: .5s ease;
-
-        @media (max-width: 768px){
-            max-width: 64px;
-        }
-    }
 
     &__links{
         display: flex;
+        
         &__item{
             margin: 5px;
             transition: opacity .5s ease;
@@ -51,6 +28,8 @@
 
     .button{
         height: 50px;
+        padding-left: 16px;
+        padding-right: 16px;
 
         @media (max-width: 768px){
             font-size: 13px;

@@ -1,11 +1,10 @@
 @use 'variaveis';
-
 .hero {
     padding: 5.6vw;
-    min-height: 80vh;
     background-image: url(../../build/assets/images/hero_desktop_2024.jpg);
-    text-align: center;
-    background-size: cover;
+    background-size: contain;
+    margin-top: -12vh;
+    background-repeat: no-repeat;
 
     @media (max-width:768px){
         background-image: url(../../build/assets/images/hero_celular.jpeg);
@@ -16,34 +15,53 @@
     }
 
     .button{
-        margin-top: 2vw;
-        margin-bottom: 8px;
+        margin: 18px 0;
+        width: 15vw;
+        padding: 0;
     }
 
     &__content{
-        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 85vh;
+        justify-content: center;
 
         &__branding{
             max-width: 320px;
-            margin: 0 auto 38px;
+
+            img{
+                max-width: 240px;
+                display: block;
+                height: auto;
+            }
 
             @media (max-width: 768px){
                 max-width: 180px;
             }
         }
-        .title__small{
-            margin-bottom: 64px;
+        .title__big{
+            margin-top: 24px;
+            text-align: left;
+            line-height: 1.1;
         }
-        p{
-            margin-bottom: 20px;
+        .title__small{
+            margin-top: 24px;
+            text-align: left;
+            font-weight: 500;
 
             &:last-child{
                 margin-top: 60px;
             }
         }
+        .text__normal{
+            text-align: start;
+        }
+        
         &__combos{
             display: flex;
             justify-content: space-between;
+            width: 100%;
 
             @media (max-width: 768px){
                 display: block;
