@@ -57,6 +57,7 @@
             display: flex;
             gap: 46px;
             align-items: start;
+
             @media (max-width:768px){
                 display: flex;
                 flex-direction: column;
@@ -67,8 +68,15 @@
                 padding-top: 0px;
             }
             &__social{
+                width: 400px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
+
+                @media (max-width: 768px){
+                    width: 300px;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
             }
             a{
                 text-decoration: none;
