@@ -3,13 +3,13 @@
 .header{
     display: flex;
     justify-content: end;
+    height: 40px;
     background-color: variaveis.$corDeFundo;
     transition: background-color .5s ease;
     z-index: 1;
 
     &__container{
         padding: 8px 36px;
-        display: flex;
         justify-content: space-between;
 
         @media (max-width: 768px){
@@ -21,21 +21,34 @@
         display: flex;
         
         &__item{
-            margin: 5px;
             transition: opacity .5s ease;
-        }
-    }
 
-    .button{
-        height: 50px;
-        padding-left: 16px;
-        padding-right: 16px;
-
-        @media (max-width: 768px){
-            font-size: 13px;
-            padding: 8px 11px;
-            height: 40px;
-            letter-spacing: 0;
-        }
-    }
+            .login{
+                font-weight: 500;
+                display: flex;
+                height: 50px;
+                align-items: center;
+                font-size: 21px;
+                color: variaveis.$corTextoSecundario;
+                background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
+                text-transform: uppercase;
+                border-radius: 4px;
+                text-decoration: none;
+                padding: 26px 18px;
+                margin: 5px;
+                letter-spacing: 1px;
+                border: 1px solid variaveis.$corTextoSecundario;
+                &:hover{
+                    background-color: variaveis.$corTextoSecundario;
+                    color: variaveis.$corDeFundo;
+                }
+                @media (max-width: 768px){
+                    font-size: 13px;
+                    padding: 8px 11px;
+                    height: 40px;
+                    letter-spacing: 0;
+                }
+            }
+}
+}
 }
