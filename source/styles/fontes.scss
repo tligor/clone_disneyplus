@@ -43,10 +43,10 @@
     }
 }
 .text__small{
-    @include text(12px);
+    @include text(11px);
 
     @media (max-width: 768px){
-        @include text(11px);
+        @include text(10px);
     }
 }
 

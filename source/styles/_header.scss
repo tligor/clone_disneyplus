@@ -28,14 +28,14 @@
                 display: flex;
                 height: 50px;
                 align-items: center;
-                font-size: 21px;
+                font-size: 18px;
                 color: variaveis.$corTextoSecundario;
                 background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
                 text-transform: uppercase;
                 border-radius: 4px;
                 text-decoration: none;
                 padding: 26px 18px;
-                margin: 5px;
+                margin: 3px;
                 letter-spacing: 1px;
                 border: 1px solid variaveis.$corTextoSecundario;
                 &:hover{

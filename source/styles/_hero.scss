@@ -23,19 +23,20 @@
     &__content{
         display: flex;
         flex-direction: column;
-        width: 48%;
+        width: 50%;
         height: 100%;
         justify-content: center;
-        transform: scale(1.0);
-        padding: 15px 0;
-        margin-top: 12px;
+        transform: scale(.98);
+        margin-top: 40px;
+        
         
         &__branding{
             max-width: 320px;
             img{
-                max-width: 180px;
+                max-width: 185px;
                 display: block;
                 height: auto;
+                
             }
             
             @media (max-width: 768px){
@@ -45,8 +46,8 @@
         .title__big{
             margin: 24px 0 0 0;
             text-align: left;
-            line-height: 1.4;
-            font-weight: 800;
+            line-height: 1.5;
+            font-weight: 600;
         }
         .text__normal{
             text-align: start;
@@ -73,21 +74,24 @@
             margin: 15px 0;
             gap: 40px;
             max-width: 650px;
-            
             @media (max-width: 768px){
                 display: block;
             }
             
             &__combo{
-                width: calc(50% - 12px);
+                width: calc(50%);
                 position: relative;
                 button{
                     max-width: 360px;
                     width: 308px;
                     padding: 16.5px 24px;
-                    
+                    margin-bottom: 24px;
                 }
-                
+                span{
+                    display: block;
+                    font-size: 15px;
+                    text-align: justify;
+                }
                 @media (max-width: 768px){
                     width: 100%;
                     margin-bottom: 24px;
@@ -100,7 +104,6 @@
         }
     }
     .scrolldown {
-        width: 48px;
         position: absolute;
         bottom: -90px;
     
@@ -110,6 +113,10 @@
             cursor: pointer;
             padding: 0;
             outline: none;
+
+            img{
+                width: 25px;
+            }
         }
     
         .danca {

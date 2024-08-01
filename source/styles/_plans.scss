@@ -1,47 +1,76 @@
+@use 'variaveis';
+
 .plans{
     padding: 5.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    h2{
+.center{
+    text-align: center;
+}
+
+.text__normal{
+    font-weight: 500;
+}
+    h2, p{
         text-align: center;
     }
+    p{
+        margin-top: 24px;
+    }
+    &__table{
+        width: 992px;
+        border-collapse: collapse;
+        margin-top: 84px;
 
-    &__list{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 50px;
-
-        @media (max-width: 768px){
-            display: block;
-        }
-
-        .button{
-            margin-top:24px;
-        }
-        &__item{
-            text-align: center;
-            padding: 60px 44px 44px;
-            max-width: 380px;
-            width: 100%;
-            
-            &:nth-child(2){
-                background-image: url(../assets/images/fundo_combo_plus.png);
-                background-repeat: no-repeat;
-                background-size: contain;
+        thead{
+            border-bottom:1px solid variaveis.$corTextoSecundario;
+            tr:first-child{
+                th{
+                    &:nth-child(2){
+                        border-top: solid 3px variaveis.$corDeFundoPlanos;
+                    }
+                    &:nth-child(3){
+                        border-top: solid 3px variaveis.$corDeFundoPlanos;
+                    }
+                }
             }
+            button{
+                font-size: 14px;
+            }
+        }
+        tbody{
+            tr{
+                border-bottom: solid 1px hsla(0, 0%, 75%, .3);
+                height: 80px;
+                &:first-child{
+                    height: 120px;
+            }
+            }
+        }
+
+        th{
             img{
-                height: 83px;
+                width: 100px;
             }
-            @media (max-width:768px){
-                display: flex;
-                flex-direction: column;
+            
+        }
+        th, td {
+            padding: 8px;
+
+            &:first-child{
+                width: 40%;
             }
-            strong{
-                display: block;
-                margin-top: 24px;
+            &:not(:first-child){
+                width: 25%;
+            }
+
+            &:last-child{
+                background-color: variaveis.$corDeFundoPlanos;
             }
         }
-    }p{
-        text-align: center;
+        
     }
 
 }
