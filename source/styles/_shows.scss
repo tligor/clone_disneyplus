@@ -16,11 +16,11 @@
             background-size: contain;
             display: block;
             box-sizing: border-box;
-            padding: 10vw 5vw;
+            padding: 10vw 5vw 0;
             flex-direction: column-reverse;
             background-position: 0 center;
             position: relative;
-            background-position: center 300px;
+            background-position: center 280px;
         }
         @media (min-width: 1025px){
             background-image: url(../../build/assets/images/_shows_072024_tablet.png);

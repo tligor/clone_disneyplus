@@ -5,6 +5,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    p{
+        margin: 20px 0 0;
+        padding: 0 8px;
+        display:flex;
+        flex-direction: column;
+        justify-content:baseline
+
+        span{
+            display: block;
+            max-width: 322px;
+            line-height: 15px;
+        }
+    }
+    h2, p{
+        text-align: center;
+    }
+    @media (max-width:768px){
+        padding: 0 5vw;
+        display: block;
+
+        .title__big{
+            font-size: 32px;
+            letter-spacing: 0;
+            font-style: normal;
+        }
+        .text__normal{
+            font-size: 16px;
+            font-weight: 400;
+            margin: 20px 0 0;
+            font-style: normal;
+            letter-spacing: 0;
+        }
+    }
 
 .center{
     text-align: center;
@@ -13,17 +47,81 @@
 .text__normal{
     font-weight: 500;
 }
-    h2, p{
-        text-align: center;
-    }
-    p{
-        margin-top: 24px;
-    }
     &__table{
         width: 992px;
         border-collapse: collapse;
         margin-top: 84px;
+        &--desktop {
+            display: table;
+    
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
 
+        &--phone {
+            display: none;
+        
+            @media (max-width: 768px) {
+                width: 100%;
+                display: table;
+                justify-content: center;
+                position: relative;
+                thead{
+                    position: sticky;
+                    top: 0;
+                    
+                    &:first-child{
+                        background-color: variaveis.$corDeFundo;
+
+                    }
+                }
+                tbody{
+                    tr{
+                        height: 46px !important;
+                        &:first-child{
+                            border-bottom: none;
+                            height: 338px;
+                        }
+                        &:nth-child(2){
+                            height: 152px !important;
+                        }
+                        &:nth-child(3){
+                            height: 88px !important;
+                            border: none;
+                        }
+                        &:nth-child(5){
+                            height: 52px !important;
+                            border: none;
+                            td{
+                                padding: 0;
+                                
+                            }
+                        }
+                        &:nth-child(6){
+                            height: 52px !important;
+                        }
+                        &:nth-child(7){
+                           border: none;
+                        }
+                        &:nth-child(9){
+                            border: none;
+                         }
+                    }
+                    
+                    th, td{
+                        text-align: center;
+                        
+                        p{
+                            margin-top: 8px !important;
+                        }
+                        &:last-child{
+                            background-color: variaveis.$corDeFundo;
+                        }
+                    }
+                }
+        }
+    }
         thead{
             border-bottom:1px solid variaveis.$corTextoSecundario;
             tr:first-child{
@@ -72,5 +170,4 @@
         }
         
     }
-
 }
