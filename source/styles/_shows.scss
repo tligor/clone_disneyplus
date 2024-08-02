@@ -13,6 +13,14 @@
 
         @media (max-width:768px) {
             background-image: url(../../build/assets/images/_shows_072024_celular.png);
+            background-size: contain;
+            display: block;
+            box-sizing: border-box;
+            padding: 10vw 5vw;
+            flex-direction: column-reverse;
+            background-position: 0 center;
+            position: relative;
+            background-position: center 300px;
         }
         @media (min-width: 1025px){
             background-image: url(../../build/assets/images/_shows_072024_tablet.png);
@@ -27,6 +35,33 @@
             left: auto;
             margin-bottom: 30vh;
             padding: 5vw;
+
+            @media (max-width:768px){
+                display: block;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                max-width: 340px;
+                padding: 20px 2vw 0;
+                margin: 0 auto;
+                .title__small{
+                    font-size: 12px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    letter-spacing: 0;
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 30px;
+                }
+                .text__normal{
+                    font-size: 13px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 16px !important;
+                }
+            }
         }
         .text__normal{
             line-height: 18px;
