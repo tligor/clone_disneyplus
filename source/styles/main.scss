@@ -63,12 +63,26 @@ body {
 
 .image-text-section{
     padding: 5.6vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
+    background-image: url(../assets/images/bg_marvel_desktop.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 934px;
     
     @media (max-width: 768px){
-        display: block;
+        background-image: url(../assets/images/bg_marvel_phone.png);
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 500px !important;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10vw 5vw;
+        background-position: center 90%;
     }
 
     img{
@@ -76,37 +90,72 @@ body {
     }
     &__text_container{
         padding: 0 2vw;
-
+        margin-bottom: 35vh;
+        padding-left: 5vw;
         h2{
             margin-bottom: 24px;
         }
+        p{
+            font-size: 16px;
+        }
         @media (max-width:768px){
-            padding: 10px;
+            padding: 20px 2vw 0;
             text-align: center;
+            h2{
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 0;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.2;
+                margin-top: 16px;
+            }
+            
         }
     }
     &--image-full-width{
-        display: block;
-        position: relative;
-        img{
-            width: 100%;
-
+        padding: 5.6vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 15vh;
+        box-sizing: border-box;
+        height: 928px;
+        background-image: url(../assets/images/pc_tablet_celular_phone.png);
+        
+        @media (max-width: 768px){
+            display: block;
+            background-size: 90%;
+            background-position: center 100%;
+            padding: 10vw 3vw;
+            height: 400px;
         }
+    
         &__text_container{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            height: 100%;
-            width: calc(50% - 5.6vw);
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            text-align: center;
+            margin: 0;
 
             @media (max-width: 768px){
-                position: relative;
-                left: 0;
+                display: block;
                 width: 100%;
+                h2{
+                    margin-top: 0;
+                    text-wrap: nowrap;
+                    font-size: 28px;;
+                    font-weight: 700;
+                    line-height: 1.2;
+                }
+                p{
+                    font-weight: 400;
+                    line-height: 1.1;
+                    font-size: 16px;
+                }
             }
         }
     }
 }
+

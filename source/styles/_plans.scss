@@ -51,6 +51,62 @@
         width: 992px;
         border-collapse: collapse;
         margin-top: 84px;
+        position: relative;
+        thead{
+            position: sticky;
+            top: 0;
+            border-bottom:1px solid variaveis.$corTextoSecundario;
+
+            button{
+                font-size: 14px;
+            }
+
+            th{
+                img{
+                    width: 100px;
+                }
+                &:first-child{
+                    th{
+                        &:nth-child(2){
+                            border-top: solid 3px variaveis.$corDeFundoPlanos;
+                        }
+                        &:nth-child(3){
+                            border-top: solid 3px variaveis.$corDeFundoPlanos;
+                        }
+                    }
+                
+            }}
+            &:first-child{
+                background-color: variaveis.$corDeFundo;
+
+            }}
+
+            tbody{
+                tr{
+                    border-bottom: solid 1px hsla(0, 0%, 75%, .3);
+                    height: 80px;
+                    
+                    &:first-child{
+                        height: 120px;
+                }
+                }
+            }
+
+            th, td {
+                padding: 8px;
+        
+                &:first-child{
+                    width: 40%;
+                }
+                &:not(:first-child){
+                    width: 25%;
+                }
+        
+                &:last-child{
+                    background-color: variaveis.$corDeFundoPlanos;
+                }
+            }
+
         &--desktop {
             display: table;
     
@@ -122,52 +178,10 @@
                 }
         }
     }
-        thead{
-            border-bottom:1px solid variaveis.$corTextoSecundario;
-            tr:first-child{
-                th{
-                    &:nth-child(2){
-                        border-top: solid 3px variaveis.$corDeFundoPlanos;
-                    }
-                    &:nth-child(3){
-                        border-top: solid 3px variaveis.$corDeFundoPlanos;
-                    }
-                }
-            }
-            button{
-                font-size: 14px;
-            }
-        }
-        tbody{
-            tr{
-                border-bottom: solid 1px hsla(0, 0%, 75%, .3);
-                height: 80px;
-                &:first-child{
-                    height: 120px;
-            }
-            }
-        }
-
-        th{
-            img{
-                width: 100px;
-            }
-            
-        }
-        th, td {
-            padding: 8px;
-
-            &:first-child{
-                width: 40%;
-            }
-            &:not(:first-child){
-                width: 25%;
-            }
-
-            &:last-child{
-                background-color: variaveis.$corDeFundoPlanos;
-            }
-        }
+        
+    
+        
+        
         
     }
 }

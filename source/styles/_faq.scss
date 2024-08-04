@@ -2,13 +2,15 @@
     padding: 5.6vw;
 
     @media (max-width:768px){
-        width: 90vw;
+        width: 100%;
         margin: 0 auto;
+        padding: 10vw 5vw !important;
     }
 
     h2{
         text-align: center;
         margin-bottom: 24px;
+        font-size: 29px;
     }
 
     &__questions{
@@ -26,7 +28,7 @@
                 position: relative;
 
                 @media (max-width:768px){
-                    font-size: 12px;
+                    font-size: 16px;
                     padding: 12px;
                 }
 
